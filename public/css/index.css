@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+/* .header {
+    background-image: url('../img/paper.jpg');
+    background-size: cover;
+} */
+
+body {
+    /* margin: 0;
+    padding: 2rem 15rem; */
+    /* background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4 51%, #E55D87 100%) */
+    background: #333;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+h3.typing {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 4rem;
+    color: #ffffff;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 60%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE 51%, #003973 100%)
+}
+
+.btn-grad {
+    margin: 20px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+@media all and (max-width:30em) {
+    a.btn-grad {
+        display: block;
+        margin: 0.4em auto;
+    }
+
+    h3.typing {
+        font-size: 4vw;
+    }
+}
+
+
+/* .btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%)} */
